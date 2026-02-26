@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J Karthikeyan | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.typing {
+  font-size: 1.3rem;
+  color: #00ffff;
+  margin-top: 10px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ffff;
+}
+
+section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  padding: 8px 15px;
+  background: rgba(0,255,255,0.2);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background: #00ffff;
+  color: black;
+}
+
+.project-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.15);
+  transition: 0.4s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.25);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  border-radius: 25px;
+  background: #00ffff;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff69b4;
+  color: white;
+}
+
+.social-icons a {
+  margin-right: 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ffff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background: rgba(0,0,0,0.6);
+}
+
+@media(max-width: 768px){
+  header h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>J KARTHIKEYAN</h1>
+  <div class="typing" id="typing"></div>
+  <a class="btn" href="resume.pdf" target="_blank">
+    <i class="fa fa-download"></i> Download Resume
+  </a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Computer Science and Business Systems (CSBS) student with a strong passion for software engineering and
+scalable application development. Possess solid expertise in Java and Python, along with hands-on experience
+building dynamic and responsive web applications using HTML, CSS, JavaScript, and React. Known for a
+structured and analytical approach to problem-solving, with the ability to integrate technical proficiency and
+business acumen to deliver efficient and impactful solutions. Continuously driven to learn emerging technologies
+and contribute meaningfully to innovative projects.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <div class="skill">Java</div>
+    <div class="skill">Python</div>
+    <div class="skill">React</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">MongoDB</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Git</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+ <div class="project-card">
+    <h3>E-commerce Website</h3>
+    <p>Developed a full-stack e-commerce platform using React, Node.js, and MongoDB with JWT-based authentication. Implemented secure
+RESTful APIs and dynamic product management while optimizing database performance.</p>
+    <a class="btn" href="https://github.com/JKarthikeyan-1108/mini-ecommerce" target="_blank">
+      <i class="fab fa-github"></i> View Code
+    </a>
+  </div>
+
+  <div class="project-card">
+    <h3>Ideathon – Water Distribution Analysis</h3>
+    <p>Collaborated in a team to analyze water distribution inefficiencies using data-driven and analytical approaches. Proposed solutions to improve system accuracy and operational efficiency.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Expense Tracker</h3>
+    <p>Designed and implemented a Python-based expense tracking system with categorized analytics and monthly reporting. Applied
+structured data handling techniques and integrated Matplotlib for financial visualization.</p>
+    <a class="btn" href="https://github.com/JKarthikeyan-1108/expense-tracker" target="_blank">
+      <i class="fab fa-github"></i> View Code
+    </a>
+  </div>
+
+  <div class="project-card">
+    <h3>Tic Tac Toe (Java)</h3>
+    <p>Console-based game implementing win detection and OOP principles.</p>
+    <a class="btn" href="https://github.com/JKarthikeyan-1108/tic-tac-toe-java-" target="_blank">
+      <i class="fab fa-github"></i> View Code
+    </a>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:karthikeyanj0608@gmail.com">karthikeyanj0608@gmail.com</a></p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/karthikeyan-j-387a4b297" target="_blank">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://github.com/JKarthikeyan-1108" target="_blank">
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 J Karthikeyan | Built with Passion</p>
+</footer>
+
+<script>
+const text = ["Computer Science & Business Systems Student", "Java & MERN Stack Enthusiast", "Problem Solver"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type() {
+  if (count === text.length) {
+    count = 0;
+  }
+  currentText = text[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing").textContent = letter;
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+    setTimeout(type, 1500);
+  } else {
+    setTimeout(type, 100);
+  }
+})();
+</script>
+
+</body>
+</html>
