@@ -21,24 +21,24 @@ const skillsData = [
   },
   {
     category: "Testing & Tools",
-    items: ["Postman", "pytest", "Unit Testing", "Agile/Scrum", "IBM Watsonx", "ServiceNow"]
+    items: ["Postman", "Agile/Scrum", "ServiceNow"]
   }
 ];
 
 export default function Skills() {
   return (
     <Section id="skills" title="06. Technical Skills">
-      <div className="skills-grid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {skillsData.map((skillGroup, index) => (
           <motion.div 
-            className="skill-category" 
+            className="bg-navy-light p-6 rounded-lg border-l-2 border-cyan shadow-lg" 
             key={index}
             whileHover={{ y: -5 }}
           >
-            <h3>{skillGroup.category}</h3>
-            <div className="skills-list">
+            <h3 className="text-slate-light font-semibold text-lg mb-4">{skillGroup.category}</h3>
+            <div className="flex flex-wrap gap-3">
               {skillGroup.items.map((skill, idx) => (
-                <div className="skill" key={idx}>
+                <div className="font-mono text-sm text-cyan border border-cyan px-3 py-1 rounded hover:bg-cyan-light transition-colors cursor-default" key={idx}>
                   {skill}
                 </div>
               ))}
