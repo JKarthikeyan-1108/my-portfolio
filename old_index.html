@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J Karthikeyan | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.typing {
+  font-size: 1.3rem;
+  color: #00ffff;
+  margin-top: 10px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ffff;
+}
+
+section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  padding: 8px 15px;
+  background: rgba(0,255,255,0.2);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background: #00ffff;
+  color: black;
+}
+
+.project-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.15);
+  transition: 0.4s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.25);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  border-radius: 25px;
+  background: #00ffff;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff69b4;
+  color: white;
+}
+
+.social-icons a {
+  margin-right: 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ffff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background: rgba(0,0,0,0.6);
+}
+
+@media(max-width: 768px){
+  header h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>J KARTHIKEYAN</h1>
+  <div class="typing" id="typing"></div>
+  <a class="btn" href="resume.pdf" target="_blank">
+    <i class="fa fa-download"></i> Download Resume
+  </a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#research">Research</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Computer Science and Business Systems student at Panimalar Engineering College, passionate about building scalable full-stack applications (React, Node.js, MongoDB). Completed 3 industry internships in software development, cloud platforms, and applied AI. Co-authored an IEEE research paper on federated multi-agent orchestration achieving a 57.6% improvement over single-LLM baselines. Certified in Oracle OCI (AI & Foundations), Machine Learning (NPTEL/IIT Kharagpur), and Data Science (NASSCOM Gold). Aspiring to join innovative engineering teams and deliver real-world impact through full-stack development and AI integration.
+  </p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="project-card">
+    <h3>B.Tech in Computer Science and Business Systems</h3>
+    <p><strong>Panimalar Engineering College, Chennai</strong> | Sept 2023 - Present</p>
+    <p>CGPA: 8.81 (Up to 5th Sem)</p>
+  </div>
+  <div class="project-card">
+    <h3>SSLC</h3>
+    <p><strong>Sri Chaitanya School, Hosur</strong> | 2022 - 2023</p>
+    <p>Percentage: 70%</p>
+  </div>
+  <div class="project-card">
+    <h3>HSLC</h3>
+    <p><strong>Mathakondapalli Model School, Hosur</strong> | 2014 - 2021</p>
+    <p>Percentage: 65%</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Internships</h2>
+  <div class="project-card">
+    <h3>Software Development Engineer Intern (On-site)</h3>
+    <p><strong>Bluestock Fintech</strong> | Jul - Aug 2025</p>
+    <ul>
+        <li style="margin-left: 20px; margin-top: 10px;">Built and shipped SDE features across 2 production releases; implemented REST APIs, wrote unit tests, and deployed using CI/CD pipeline improving backend reliability.</li>
+    </ul>
+  </div>
+  <div class="project-card">
+    <h3>Virtual Internship Program</h3>
+    <p><strong>ServiceNow University - AICTE / SmartBridge</strong> | Oct - Nov 2025</p>
+    <ul>
+        <li style="margin-left: 20px; margin-top: 10px;">Completed ServiceNow Flows, ATF, Administration, and CSA Exam Preparation modules on the Now Platform.</li>
+    </ul>
+  </div>
+  <div class="project-card">
+    <h3>Applied AI Virtual Intern</h3>
+    <p><strong>CSRBOX - IBM SkillsBuild Applied AI - AICTE</strong> | Dec 2025 - Jan 2026</p>
+    <ul>
+        <li style="margin-left: 20px; margin-top: 10px;">Built a capstone AI Agent using Python, IBM Watsonx & Relay; covered GenAI, prompt engineering, and agentic automation.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <h3>Spotify Clone (React, Node.js, MongoDB)</h3>
+    <p>Full-stack music streaming app with JWT auth, playlist management, and audio playback. ~30% faster load via lazy loading; supports 50+ concurrent sessions. Deployed on Render with GitHub Actions CI/CD pipeline.</p>
+  </div>
+  <div class="project-card">
+    <h3>FinTrack - Personal Finance Tracker (React, Node.js, MongoDB)</h3>
+    <p>Finance dashboard with Recharts analytics for income/expense tracking and budgeting. 40% better data visibility; secured with bcrypt + JWT. Containerized with Docker and deployed on Vercel.</p>
+  </div>
+  <div class="project-card">
+    <h3>E-commerce Website (React, Node.js, MongoDB)</h3>
+    <p>Full-stack e-commerce platform with JWT auth, secure REST APIs, and unit-tested endpoints (Postman). MongoDB query optimizations reduced read latency by ~25%.</p>
+    <a class="btn" href="https://github.com/JKarthikeyan-1108/mini-ecommerce" target="_blank">
+      <i class="fab fa-github"></i> View Code
+    </a>
+  </div>
+  <div class="project-card">
+    <h3>Expense Tracker (Python)</h3>
+    <p>Python expense tracking system with categorized analytics and automated monthly reporting across 10+ categories using Matplotlib. Tested with pytest for core calculation modules.</p>
+    <a class="btn" href="https://github.com/JKarthikeyan-1108/expense-tracker" target="_blank">
+      <i class="fab fa-github"></i> View Code
+    </a>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research Publication</h2>
+  <div class="project-card">
+    <h3>Decentralized Cognitive Architectures for Autonomous Software Engineering: A Federated Swarm Orchestration Framework for Enterprise-Scale Development Pipelines</h3>
+    <p><em>Jeevan C, Karthikeyan J, Lokesh S, Krishna Prasath J, Kishore S — Panimalar Engineering College, Chennai</em></p>
+    <p style="margin-top: 10px;">Proposed FORC, a federated multi-agent framework achieving 85.3% task resolution vs 54.1% single-LLM baseline (57.6% gain) and reducing mean time-to-merge from 4.2 h to 1.8 h on SWE-bench-Enterprise (840 tasks). IEEE Conference Paper (Under Review).</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div style="margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">Languages</h3>
+      <div class="skills-list">
+        <div class="skill">Java</div><div class="skill">Python</div><div class="skill">JavaScript</div><div class="skill">TypeScript</div><div class="skill">C</div><div class="skill">C++</div><div class="skill">DSA</div>
+      </div>
+  </div>
+  <div style="margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">Frameworks & Libraries</h3>
+      <div class="skills-list">
+        <div class="skill">React</div><div class="skill">Node.js</div><div class="skill">Express.js</div><div class="skill">Recharts</div><div class="skill">Matplotlib</div>
+      </div>
+  </div>
+  <div style="margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">Databases</h3>
+      <div class="skills-list">
+        <div class="skill">MongoDB</div><div class="skill">SQL</div><div class="skill">Redis (familiar)</div>
+      </div>
+  </div>
+  <div style="margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">DevOps & Cloud</h3>
+      <div class="skills-list">
+        <div class="skill">Docker</div><div class="skill">GitHub Actions</div><div class="skill">CI/CD</div><div class="skill">Git</div><div class="skill">Vercel</div><div class="skill">Render</div><div class="skill">Oracle OCI</div>
+      </div>
+  </div>
+  <div style="margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">Testing & Tools</h3>
+      <div class="skills-list">
+        <div class="skill">Postman</div><div class="skill">pytest</div><div class="skill">Unit Testing</div><div class="skill">Agile/Scrum</div><div class="skill">IBM Watsonx</div><div class="skill">ServiceNow</div>
+      </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Additional Certifications</h2>
+  <div class="project-card">
+    <ul>
+        <li style="margin-left: 20px; margin-bottom: 10px;"><strong>Oracle Cloud Infrastructure 2025</strong> - AI Foundations Associate & Foundations Associate (Aug 2025)</li>
+        <li style="margin-left: 20px; margin-bottom: 10px;"><strong>NPTEL Online Certification</strong> - Introduction to Machine Learning (IIT Kharagpur, Jul-Sep 2025)</li>
+        <li style="margin-left: 20px; margin-bottom: 10px;"><strong>NASSCOM</strong> - Data Science for Beginners (Feb 2024, Gold - 89%)</li>
+        <li style="margin-left: 20px;"><strong>Code-Galatta</strong> - Certified in C, C++, Java, Python in DSA (Dec 2023)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt" style="width: 25px; color: #00ffff;"></i> Chennai</p>
+  <p style="margin-bottom: 10px;"><i class="fas fa-envelope" style="width: 25px; color: #00ffff;"></i> <a href="mailto:karthikeyanj0608@gmail.com" style="color: white; text-decoration: none;" onmouseover="this.style.color='#00ffff'" onmouseout="this.style.color='white'">karthikeyanj0608@gmail.com</a></p>
+  <p style="margin-bottom: 20px;"><i class="fas fa-phone" style="width: 25px; color: #00ffff;"></i> <a href="tel:+919442725891" style="color: white; text-decoration: none;" onmouseover="this.style.color='#00ffff'" onmouseout="this.style.color='white'">+91 9442725891</a></p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/karthikeyan-j-387a4b297" target="_blank">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://github.com/JKarthikeyan-1108" target="_blank">
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 J Karthikeyan | Built with Passion</p>
+</footer>
+
+<script>
+const text = ["Computer Science & Business Systems Student", "Java & MERN Stack Enthusiast", "Problem Solver"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type() {
+  if (count === text.length) {
+    count = 0;
+  }
+  currentText = text[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing").textContent = letter;
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+    setTimeout(type, 1500);
+  } else {
+    setTimeout(type, 100);
+  }
+})();
+</script>
+
+</body>
+</html>
