@@ -55,7 +55,7 @@ export default function Header() {
       <div className="mt-10">
         <a 
           className="inline-block px-7 py-3 border border-cyan rounded text-cyan font-mono text-sm hover:bg-cyan-light transition-colors duration-300 shadow-lg shadow-cyan/10" 
-          href="resume.pdf" 
+          href="J_Karthikeyan_Resume.pdf" 
           target="_blank" 
           rel="noopener noreferrer"
         >
