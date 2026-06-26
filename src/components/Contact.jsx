@@ -30,7 +30,7 @@ export default function Contact() {
         </a>
 
         <div className="flex gap-6 mt-16">
-          <a href="https://www.linkedin.com/in/karthikeyan-j-387a4b297" target="_blank" rel="noopener noreferrer" className="text-slate hover:text-cyan hover:-translate-y-1 transition-all duration-300">
+          <a href="https://www.linkedin.com/in/karthikeyan-j-a355742b4/" target="_blank" rel="noopener noreferrer" className="text-slate hover:text-cyan hover:-translate-y-1 transition-all duration-300">
             <i className="fab fa-linkedin fa-2x"></i>
           </a>
           <a href="https://github.com/JKarthikeyan-1108" target="_blank" rel="noopener noreferrer" className="text-slate hover:text-cyan hover:-translate-y-1 transition-all duration-300">
