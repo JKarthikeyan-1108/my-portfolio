@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         navy: {
-          DEFAULT: 'var(--color-bg-primary)',
+          DEFAULT: 'rgb(var(--color-bg-primary) / <alpha-value>)',
           light: 'var(--color-bg-secondary)',
           lighter: 'var(--color-bg-tertiary)',
         },
