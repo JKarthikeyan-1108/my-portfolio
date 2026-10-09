@@ -5,8 +5,26 @@ import { motion } from 'framer-motion';
 export default function Projects() {
   return (
     <Section id="projects" title="04. Projects">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <motion.div className="bg-navy-light rounded-lg p-8 flex flex-col justify-between h-full border border-transparent hover:border-cyan hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-cyan/10" whileHover={{ y: -8 }}>
+      <motion.div 
+        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: { staggerChildren: 0.2 }
+          }
+        }}
+      >
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+          }}
+          className="bg-navy-light rounded-lg p-8 flex flex-col justify-between h-full border border-transparent hover:border-cyan hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(100,255,218,0.2)] transform-gpu" 
+          whileHover={{ y: -8, scale: 1.02 }}
+        >
           <div>
             <div className="flex justify-between items-center mb-6">
               <i className="far fa-folder-open text-4xl text-cyan"></i>
@@ -25,7 +43,14 @@ export default function Projects() {
           </div>
         </motion.div>
 
-        <motion.div className="bg-navy-light rounded-lg p-8 flex flex-col justify-between h-full border border-transparent hover:border-cyan hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-cyan/10" whileHover={{ y: -8 }}>
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+          }}
+          className="bg-navy-light rounded-lg p-8 flex flex-col justify-between h-full border border-transparent hover:border-cyan hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(100,255,218,0.2)] transform-gpu" 
+          whileHover={{ y: -8, scale: 1.02 }}
+        >
           <div>
             <div className="flex justify-between items-center mb-6">
               <i className="far fa-folder-open text-4xl text-cyan"></i>
@@ -43,7 +68,14 @@ export default function Projects() {
           </div>
         </motion.div>
 
-        <motion.div className="bg-navy-light rounded-lg p-8 flex flex-col justify-between h-full border border-transparent hover:border-cyan hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-cyan/10" whileHover={{ y: -8 }}>
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+          }}
+          className="bg-navy-light rounded-lg p-8 flex flex-col justify-between h-full border border-transparent hover:border-cyan hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(100,255,218,0.2)] transform-gpu" 
+          whileHover={{ y: -8, scale: 1.02 }}
+        >
           <div>
             <div className="flex justify-between items-center mb-6">
               <i className="far fa-folder-open text-4xl text-cyan"></i>
@@ -60,7 +92,7 @@ export default function Projects() {
             <span className="font-mono text-xs text-cyan bg-cyan-light px-3 py-1 rounded-full">pytest</span>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </Section>
   );
 }

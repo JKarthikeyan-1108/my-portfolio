@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const links = [
@@ -13,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="glass-nav flex justify-center flex-wrap gap-4 md:gap-8 px-4 py-4">
+    <nav className="glass-nav flex justify-center items-center flex-wrap gap-4 md:gap-8 px-4 py-4">
       {links.map((link, index) => (
         <a 
           key={index} 
@@ -23,6 +24,7 @@ export default function Navbar() {
           <span className="text-cyan">0{index + 1}.</span> {link.name}
         </a>
       ))}
+      <ThemeToggle />
     </nav>
   );
 }

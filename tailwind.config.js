@@ -4,34 +4,32 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         navy: {
-          DEFAULT: '#0a192f',
-          light: '#112240',
-          lighter: '#233554',
+          DEFAULT: 'var(--color-bg-primary)',
+          light: 'var(--color-bg-secondary)',
+          lighter: 'var(--color-bg-tertiary)',
         },
         slate: {
-          light: '#ccd6f6',
-          DEFAULT: '#8892b0',
+          light: 'var(--color-text-primary)',
+          DEFAULT: 'var(--color-text-secondary)',
         },
         cyan: {
-          DEFAULT: '#64ffda',
-          light: 'rgba(100, 255, 218, 0.1)',
+          DEFAULT: 'var(--color-accent)',
+          light: 'var(--color-accent-transparent)',
         },
         purple: {
-          DEFAULT: '#8b5cf6',
-          light: 'rgba(139, 92, 246, 0.1)',
+          DEFAULT: 'var(--color-accent-alt)',
+          light: 'var(--color-accent-alt-transparent)',
         }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         mono: ['Fira Code', 'monospace'],
       },
-      backgroundImage: {
-        'glow-pattern': 'radial-gradient(circle at 15% 50%, rgba(100, 255, 218, 0.05), transparent 25%), radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.05), transparent 25%)',
-      }
     },
   },
   plugins: [],
