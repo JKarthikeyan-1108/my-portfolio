@@ -11,7 +11,7 @@ export default function Education() {
           <div className="font-mono text-cyan text-sm mb-2">Sept 2023 - Present</div>
           <div className="text-xl font-semibold text-slate-light">B.Tech in Computer Science and Business Systems</div>
           <div className="text-lg text-slate mb-3">Panimalar Engineering College, Chennai</div>
-          <p className="text-slate">CGPA: 8.81 (Up to 5th Sem)</p>
+          <p className="text-slate">CGPA: 8.71 (Up to 6th Sem)</p>
         </motion.div>
         
         <motion.div className="relative mb-12" whileHover={{ x: 10 }}>
