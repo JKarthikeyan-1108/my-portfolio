@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const skillsData = [
   {
     category: "Languages",
-    items: ["Java", "Python", "JavaScript", "C", "C++", "DSA"]
+    items: ["Java", "Python", "JavaScript"]
   },
   {
     category: "Frameworks & Libraries",
@@ -17,11 +17,11 @@ const skillsData = [
   },
   {
     category: "DevOps & Cloud",
-    items: ["Docker", "GitHub Actions", "CI/CD", "Git", "Vercel", "Render", "Oracle OCI"]
+    items: ["Docker", "GitHub Actions", "CI/CD"]
   },
   {
     category: "Testing & Tools",
-    items: ["Postman", "Agile/Scrum", "ServiceNow"]
+    items: ["Postman", "ServiceNow"]
   }
 ];
 

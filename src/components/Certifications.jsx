@@ -15,7 +15,7 @@ export default function Certifications() {
         
         <motion.div className="relative mb-10" whileHover={{ x: 10 }}>
           <div className="timeline-dot"></div>
-          <div className="font-mono text-cyan text-sm mb-1">Jul-Sep 2025</div>
+          <div className="font-mono text-cyan text-sm mb-1">Jul–Sep 2025</div>
           <div className="text-lg font-semibold text-slate-light">NPTEL Online Certification</div>
           <div className="text-slate">Introduction to Machine Learning (IIT Kharagpur)</div>
         </motion.div>
@@ -23,8 +23,15 @@ export default function Certifications() {
         <motion.div className="relative mb-10" whileHover={{ x: 10 }}>
           <div className="timeline-dot"></div>
           <div className="font-mono text-cyan text-sm mb-1">Feb 2024</div>
-          <div className="text-lg font-semibold text-slate-light">Data Science for Beginners</div>
-          <div className="text-slate">NASSCOM (Gold - 89%)</div>
+          <div className="text-lg font-semibold text-slate-light">NASSCOM</div>
+          <div className="text-slate">Data Science for Beginners (Gold - 89%)</div>
+        </motion.div>
+
+        <motion.div className="relative mb-10" whileHover={{ x: 10 }}>
+          <div className="timeline-dot"></div>
+          <div className="font-mono text-cyan text-sm mb-1">Mar 2026</div>
+          <div className="text-lg font-semibold text-slate-light">NASSCOM</div>
+          <div className="text-slate">Software Programmer - Java (Gold - 88%)</div>
         </motion.div>
 
         <motion.div className="relative mb-6" whileHover={{ x: 10 }}>
